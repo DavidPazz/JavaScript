@@ -1,6 +1,6 @@
 const prompt = require('prompt-sync')()
 
-const idade = prompt ('Qual sua idade? ')
+const idade = prompt ('Qual sua idade?')
 
 if (idade >= 18 && idade < 60 ){
     console.log ('Você é maior de idade')

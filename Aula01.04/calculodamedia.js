@@ -5,8 +5,9 @@ Nota1, Nota2 , Nota3
 media é 7
 
 */
+
 const prompt = require('prompt-sync') ()
-const nota1 = prompt ('informe a primeira nota: ')
+const nota1 = prompt ('informe a primeira nota:')
 const nota2 = prompt ('informe a segunda nota: ')
 const nota3 = prompt ('informe a terceira nota: ')
 
