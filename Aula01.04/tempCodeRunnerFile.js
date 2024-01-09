@@ -1,1 +1,0 @@
-  console.log ('Você é maior de idade')
