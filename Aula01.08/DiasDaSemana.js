@@ -2,9 +2,9 @@
 
 const prompt = require ('prompt-sync') ()
 
-const numero = prompt ('informe qual o numero deseja informação: ')
+const numero = Number (prompt ('informe qual o numero deseja informação: '))
 
-//1 a 7
+/*1 a 7
 
 if (numero == 1) {
     console.log ('domingo')
@@ -28,4 +28,28 @@ if (numero == 1) {
 } else {
     console.log ('seu verme')
 }
-    
+*/
+
+switch (numero) {
+    case 1 :
+        console.log('domingo')
+        break
+    case 2 :
+        console.log('segunda')
+         break
+    case 3 :
+        console.log('terça')
+         break
+    case 4 :
+        console.log('quarta')
+         break
+    case 5 :
+        console.log('quinta')
+         break
+    case 6 :
+        console.log('sexta')
+         break
+    case 7 :
+        console.log('sabado')
+         break       
+}
