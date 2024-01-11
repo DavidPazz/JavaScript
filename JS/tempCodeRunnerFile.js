@@ -1,1 +1,1 @@
-let Preco = 6.00
+let lista2 = [1, 2, 3, 4, 5]
