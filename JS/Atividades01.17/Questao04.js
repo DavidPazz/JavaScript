@@ -3,7 +3,7 @@
 const prompt = require ('prompt-sync') ()
 
 function numPrimo(numero) {  // Se o número for menor que 2, não é primo
-    if (numero < 2) {
+    if (numero < 2) { //se o  numero for igual = a 2 vai da erro no console então é  < 2
       return false;
     }
 
