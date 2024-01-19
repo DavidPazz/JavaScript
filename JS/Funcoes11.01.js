@@ -3,7 +3,8 @@ function soma (a, b) {
 }
 
 soma (2 , 9)
-soma ('David ', ('Paz'))
+soma ('David ', 'Paz')
+
 
 
 function deMaior (idade) {
@@ -16,8 +17,10 @@ function deMaior (idade) {
 
 const prompt = require ('prompt-sync') ()
 
-let idade = Number (prompt('Informe a idade'))
+let idade = Number (prompt('Informe a idade: '))
 deMaior(idade)
 
-idade = Number (prompt('Informe a idade'))
+idade = Number (prompt('Informe a idade:  '))
 deMaior(idade)
+
+module.exports = deMaior

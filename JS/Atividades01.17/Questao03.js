@@ -1,10 +1,7 @@
 const prompt = require ('prompt-sync') ()
 
 function tipoNumero() {
-    // Declara uma variável para armazenar o valor do número
-    let numero = prompt("Digite um número:");
-  
-    // Converte o número para um número inteiro
+    let numero = prompt("Digite um número:");  
     numero = parseInt(numero);
   
     // Se o número for positivo, retorna 'P'
