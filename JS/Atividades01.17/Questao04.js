@@ -1,3 +1,5 @@
+/*4. Desenvolva uma função que determine se um número é primo ou não. Retorne true se for primo e false se não for. */
+
 const prompt = require ('prompt-sync') ()
 
 function numPrimo(numero) {  // Se o número for menor que 2, não é primo
@@ -17,7 +19,7 @@ function numPrimo(numero) {  // Se o número for menor que 2, não é primo
     return true;
   }
   
-  console.log(numPrimo()); // true ou False
-  console.log(numPrimo()); // false ou true
+  console.log(numPrimo(20)); //Exemplo de numero
+  console.log(numPrimo(3)); // Exemplo de numero
   
   
