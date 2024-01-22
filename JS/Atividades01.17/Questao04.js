@@ -19,7 +19,7 @@ function numPrimo(numero) {  // Se o número for menor que 2, não é primo
     return true;
   }
   
-  console.log(numPrimo(20)); //Exemplo de numero
-  console.log(numPrimo(3)); // Exemplo de numero
+  console.log(numPrimo(2)); //Exemplo de numero
+  console.log(numPrimo(20)); // Exemplo de numero
   
   
