@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +12,21 @@
 
 <body onresize="tamanhoDoPalco()">
     <!--<img src="images/mosca.png" alt="mosca" class="mosquito">-->
-
+    <div class="painel">
+        <div class="vidas">
+            <img id="vida1" src="images/coracao_cheio.png" alt="">
+            <img id="vida2" src="images/coracao_cheio.png" alt="">
+            <img id="vida3" src="images/coracao_cheio.png" alt="">
+        </div>
+        <div class="cronometro">
+            Tempo Restante: <span id="cronometro"></span>
+        </div>
+    </div>
     <script>
-        imgRandomica()
+        document.getElementById('cronometro').innerHTML = '10'
+       let criaMosquito = setInterval(function() {
+            imgRandomica()
+        }, 1000)
     </script>
 </body>
 

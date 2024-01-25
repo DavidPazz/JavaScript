@@ -1,15 +1,21 @@
+body {
+    background-image:url(../images/bg.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+
 .mosquito1 {
-    width: 90px;
-    height: 80px;
+    width: 40px;
+    height: 50px;
 }
 
 .mosquito2 {
     width: 40px;
-    height: 30px;
+    height: 50px;
 }
 
 .mosquito3 {
-    width: 30px;
+    width: 0px;
     height: 50px;
 }
 
@@ -18,5 +24,26 @@
 }
 
 .ladoB {
-    transform: scaleX();
+    transform: scaleX(1);
+}
+
+.painel {
+    position: absolute;
+    width: 200px;
+    padding: 10px;
+    left: 0px;
+    bottom: 0px;
+    border-top: 1px solid #fffafa;
+    background-color: white;
+    opacity: 0.7;
+}
+
+vidas {
+    float: left;
+}
+
+cronometro {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
 }

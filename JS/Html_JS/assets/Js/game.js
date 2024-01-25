@@ -1,5 +1,7 @@
 let altura = 0
 let largura = 0
+let numVida = 1
+let tempo = 15
 
 function tamanhoDoPalco() {
     altura = window.innerHeight
@@ -10,7 +12,31 @@ function tamanhoDoPalco() {
 
 tamanhoDoPalco()
 
+let cronometro =  setInterval(function(){
+    tempo -= 1
+    if (tempo < 0){
+        clearInterval(cronometro)
+        clearInterval(criaMosquito)
+        window.location.href = 'game_win.html'
+    } else {
+        document.getElementById('cronometro').innerHTML = tempo
+    }
+}, 1000)
+
 function imgRandomica(){
+
+    //REMOVE MOSQUITO   
+    if (document.getElementById('mosquito')) {
+        document.getElementById('mosquito').remove()
+
+        if (numVida > 3) {
+            window.location.href = 'game_over.html'
+        }else  {
+            document.getElementById('vida' + numVida ).src = images/coracao_vazio.png
+            numVida++
+        }
+    }
+
     let posicaoX = Math.floor (Math.random() * largura) -90
     let posicaoY = Math.floor (Math.random() * altura) - 90
 
@@ -21,12 +47,16 @@ function imgRandomica(){
 
     let mosquito = document.createElement('img')
     mosquito.src = "images/mosca.png"
-    mosquito.ClassName = = tamanhoDoPalco() + ' ' + ladoAleatorio() 
+    mosquito.ClassName = tamanhoDoPalco() + ' ' + ladoAleatorio() 
 
     // Random da posição
     mosquito.style.left = posicaoX + 'px'
     mosquito.style.top = posicaoY + 'px'
     mosquito.style.position =  'absolute'
+    mosquito.id = 'mosquito'
+    mosquito.onclick =  function() {
+        this.remove()
+    }
 
 
     document.body.appendChild(mosquito)
