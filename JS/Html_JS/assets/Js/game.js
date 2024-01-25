@@ -12,7 +12,7 @@ function tamanhoDoPalco() {
 
 tamanhoDoPalco()
 
-let cronometro =  setInterval(function(){
+let cronometro = setInterval(function(){
     tempo -= 1
     if (tempo < 0){
         clearInterval(cronometro)
